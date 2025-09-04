@@ -942,27 +942,3 @@ jobs:
         with:
           name: app-release
           path: app/build/outputs/apk/release/*.apk
-```
-
-After workflow completes, download the APK from build artifacts.
-
-
-# Deliverables I will provide right now (in this chat)
-
-1. Updated Android code snippets (already added to the canvas doc). I will now append the UPI code and the server pseudocode into the canvas (done).  
-2. A full GitHub Actions workflow and `signingConfig` snippet to add to your gradle file (provided above).  
-3. A ready-to-run backend pseudocode for automatic ingestion and FCM notifications (provided above).  
-
-
-# What I cannot do in this chat
-
-- I cannot compile and deliver a signed APK file directly from this chat environment. However, if you want, I can produce a fully-detailed CI/CD workflow (GitHub Actions) that will produce the signed APK for you when you provide the keystore secrets in your repository secrets. I already provided the artifact workflow above.
-
-
-# Next steps you can ask me to do now
-
-- I can generate the full `MainActivity`, `build.gradle` signing config, and `workflow.yml` as files in the canvas so you can download them.  
-- I can produce the complete backend ingestion service (FastAPI) with Dockerfile and deploy scripts.  
-- I can create the exact keystore config and sample `secrets` names for GitHub Actions so the workflow can sign the APK automatically.
-
-Tell me which of the above you want me to produce into the project files and I will add them to the canvas now.
